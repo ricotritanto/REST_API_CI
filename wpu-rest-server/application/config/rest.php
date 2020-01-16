@@ -297,7 +297,7 @@ $config['rest_database_group'] = 'default';
 |--------------------------------------------------------------------------
 |
 | The table name in your database that stores API keys
-|
+| ubahh nama key 
 */
 $config['rest_keys_table'] = 'keys';
 
@@ -324,7 +324,7 @@ $config['rest_keys_table'] = 'keys';
 |   ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 |
 */
-$config['rest_enable_keys'] = FALSE;
+$config['rest_enable_keys'] = true;
 
 /*
 |--------------------------------------------------------------------------
@@ -375,7 +375,7 @@ $config['rest_key_length'] = 40;
 
 | Note: Custom headers with the X- prefix are deprecated as of
 | 2012/06/12. See RFC 6648 specification for more details
-|
+| bisa diganti name keynya
 */
 $config['rest_key_name'] = 'X-API-KEY';
 
