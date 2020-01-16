@@ -23,7 +23,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'http://localhost/rest-api/wpu-rest-server/';
+// $config['base_url'] = 'http://localhost/rest-api/wpu-rest-server/';
+$http = 'http' . ((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == 'on') ? 's' : '') . '://';
+$newurl = str_replace("index.php","", $_SERVER['SCRIPT_NAME']);
+$config['base_url']    = "$http" . $_SERVER['SERVER_NAME'] . "" . $newurl;
 
 /*
 |--------------------------------------------------------------------------
